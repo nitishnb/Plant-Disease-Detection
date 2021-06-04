@@ -1,0 +1,34 @@
+<html>
+<title>Flowers AI</title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="container pt-3">
+ 
+  <div id="footer">
+    <h1>Flowers AI - Daisy, Rose or Sunflowers ?</h1>
+	<h2>Upload a flower image</h2>
+    <br>
+    <form class="form-horizontal" action = "/predict/" method=post enctype=multipart/form-data>
+		
+	  <div class="form-group row">
+              <label class="control-label col-sm-2" for="sepal_length">Upload the Image:</label>
+              <div class="col-sm-4">
+                <input type=file class="form-control" id="img1" name=file accept="image/*">
+              </div>
+      </div>	
+	  <div class="form-group row"> 
+            <label class="control-label col-sm-2" for="">&nbsp;</label>                
+              <div class="col-sm-offset-2 col-sm-4">
+                <input type=submit value=Upload class="btn btn-primary">
+              </div>
+      </div>
+	
+    </form>
+  </div>
+ 
+</div>
+
+</html>
