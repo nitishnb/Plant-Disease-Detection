@@ -10,10 +10,10 @@ Install virtual environment and create new virtual environment inside project fo
 > virtualenv project #project is my virtual environment name <br>
 
 Activate virtual environment
-> project\Scripts\activate.bat
-Install Flask in activated environment
-All installation related to this project must be installed in activated environment.
-> pip install Flask
+> project\Scripts\activate.bat <br>
+Install Flask in activated environment <br>
+All installation related to this project must be installed in activated environment. 
+> pip install Flask <br>
 
 Create app.py file, and other folder as shown [here](https://github.com/nitishnb/Plant-Disease-Detection/blob/main/Plant%20Disease%20Detector/app.py) in plant disease detector folder
 ### Also add your trained model within the folder 'plant disease detector'
